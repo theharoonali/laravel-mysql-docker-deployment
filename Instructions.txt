@@ -1,0 +1,18 @@
+After Git Clone:
+
+Start Docker & follow these instructions:
+> docker-compose up -d --build
+> Rename (src directory): .env.example -> .env
+& Check in .env:
+    DB_CONNECTION=mysql
+    DB_HOST=mysql:3306
+    DB_PORT=3306
+    DB_DATABASE=crudapp
+    DB_USERNAME=root
+    DB_PASSWORD=
+> docker-compose run --rm composer install
+> Do Copy> composer.json, composer.lock, package.json from src folder to npm folder.
+> docker-compose run --rm npm run dev
+> docker-compose run --rm artisan migrate --seed 
+> login: admin@admin.com ; pass: 112233
+
