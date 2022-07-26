@@ -11,7 +11,6 @@ Start Docker & follow these instructions:
     DB_USERNAME=root
     DB_PASSWORD=
 > docker-compose run --rm composer install
-> Do Copy> composer.json, composer.lock, package.json from src folder to npm folder.
 > docker-compose run --rm npm run development
 > docker-compose run --rm artisan migrate --seed 
 > login: admin@admin.com ; pass: 112233
