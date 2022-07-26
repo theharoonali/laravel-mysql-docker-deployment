@@ -1,5 +1,9 @@
 After Git Clone:
 
+For volumes and to save data of db.
+MAKE AN EMPTY FOLDER: mysql 
+
+
 Start Docker & follow these instructions:
 > docker-compose up -d --build
 > Rename (src directory): .env.example -> .env
